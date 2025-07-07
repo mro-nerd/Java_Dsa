@@ -1,0 +1,11 @@
+CALL BY VALUE:-
+
+changeA(int a){
+a=10;}
+
+main(){
+int a ==5;
+changeA(a);
+}
+
+OUTPUT>> 5 cause when we pass some var in a function then only copy of its value is passed ,so any change in its value can't be seen in main fn one user's fn is executed ,in java arrays use call by ref whereas var use call by value.
