@@ -1,0 +1,5 @@
+>>Source code(.java) -------------|
+>> compiler                        >>compilation
+>> Byte code(.class) -------------|
+>> Java virtual machine(JVM) --------------------------------------|>>execution
+>> Native code (code acco. to your m/c{like win,mac linux etc})----|

@@ -1,0 +1,72 @@
+TYPE CONVERSION=>
+
+CONVERSION HAPPEN WHEN :
+
+1) type compatible (like int can be converted to boolean,although int to char and vice versa is possible via ASCII code )
+2) destination type > source type (like long can't be converted to int , although oppo. is true)
+
+<---------------------------------------------------------------------------------------------------------------------------------------->
+
+TYPE CASTING=>
+
+In this we forcefully do the conversion even though java is not allowing us.
+eg:-
+Scanner sc = new Scanner(System.in);
+float a = 25.12f;
+int b = (int)a;
+System.out.println(b);
+
+output>>25
+
+<---------------------------------------------------------------------------------------------------------------------------------------->
+
+
+TYPE PROMOTION=>
+
+1)Java automatically promotes each byte,short or char oprand to int when evaluating am expression.
+
+eg:-(a)
+char a = 'a';
+char b = 'b';
+char c = a-b;
+
+System.out.println(b-a);
+System.out.println(b);
+System.out.println(a);
+System.out.println(c);
+
+output>>1
+        b
+        a
+        **error: incompatible type 
+
+(b)short a= 5;
+   byte b=24;
+   char c = 'c'
+   byte bt = a+b+c;
+
+output>> **error: incompatible type can't convert int to byte (i.e it is considering rhs as int )
+
+2)If one operand is long, float or double the whole expression is promoted to long, float,or double repectively
+eg:- 
+(a) 
+int a = 10;
+float b=24.39f;
+long c = 25;
+double d=30;
+int ans = a+b+c+d;
+
+output>> **error: incompatible type can't convert double to int (i.e it is considering rhs as double )
+
+
+
+
+<---------------------------------------------------------------------------------------------------------------------------------------->
+//wrong
+
+byte b= 5;
+b=b*2        cause this is considered as expression in java cause RHS is converted in int and it will show **error: incompatible type                     can't convert int to byte
+
+//right
+byte b = 5;
+b=(byte)(b*2);
