@@ -57,12 +57,14 @@ class LongestIncreasingSubseq {
                 lis.set(index, nums[i]);
             }
         }
-
+        for(Integer i:lis){
+            System.out.println(i);
+        }
         return lis.size();
     }
 
     public static void main(String[] args) {
-        int nums[] = {10, 9, 2, 5, 3, 7, 108, 18};
+        int nums[] = {3,10,2,1,20};
         int ans = lengthOfLIS(nums);
         System.out.println(ans);
     }
