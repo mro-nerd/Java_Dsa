@@ -1,4 +1,4 @@
-/*You are given m*n matrix and you need to reach on last cell i.e (m-1)(n-1). Your starting position is (1)(1) find find no. of ways to reach to last cell.  */
+/*You are given m*n matrix and you need to reach on last cell i.e (m-1)(n-1). Your starting position is (1)(1) find find no. of ways to reach to last cell.You can only move towards one right or down cell at a time.   */
 
 import java.util.*;
 
