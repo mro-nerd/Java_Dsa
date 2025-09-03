@@ -1,16 +1,37 @@
-/*You are given a binary string s. A binary string is a string consisting of characters 0 and/or 1.
-You can perform the following operation on s any number of times (even zero):
+/*
+Problem:
+---------
+We are given a binary string s (characters are '0' or '1').
+We want to make the string alternating ("0101..." or "1010...")
+by deleting characters. We can delete any characters, any number of times.
 
-->choose an integer i
- such that 1≤i≤|s|, then erase the character si.
-->You have to make s
- alternating, i. e. after you perform the operations, every two adjacent characters in s should be different.
+We need to find:
+1. The minimum number of deletions (operations) required.
+2. The number of different shortest sequences of deletions that achieve this 
+   (answer modulo 998244353).
 
-Your goal is to calculate two values:
+Key Observations:
+-----------------
+1. An alternating string has no two equal consecutive characters.
+   So, all "runs" (consecutive equal characters) longer than 1 must be shortened.
 
-->the minimum number of operations required to make s alternating
-->the number of different shortest sequences of operations that make s alternating. Two sequences of operations are different if in at least one operation, the chosen integer i is different in these two sequences.
+2. Let’s break s into runs of consecutive equal characters.
+   Example: s = "0011100"
+       runs = [2,3,2]  (2 zeros, 3 ones, 2 zeros)
 
+3. Minimum deletions:
+   If we have k runs, the resulting alternating string has length k.
+   So, deletions = n - k  (because we must delete everything except 1 char per run).
+
+4. Number of different ways:
+   - In each run of length L, we must keep exactly 1 character, so we have L choices.
+   - Multiply these choices across all runs → product of run lengths.
+   - But order of deletions also matters (different sequences).
+     Once we decide which characters remain, the deletions form a permutation 
+     of (n - k) elements. So, multiply by (n - k)!.
+
+   Final formula:
+       ways = (product of all run lengths) * (n - k)!   (mod 998244353)
 */
 
 import java.util.ArrayList;
@@ -21,30 +42,43 @@ public class altBinaryString {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int t = scanner.nextInt();
+        int t = scanner.nextInt(); // number of test cases
+
         while (t-- > 0) {
             String s = scanner.next();
-            long mul = 1;
-            ArrayList<Integer> v = new ArrayList<>();
-            int len = 1, k = 1;
+            long ways = 1; // number of ways (modulo MOD)
+            ArrayList<Integer> runs = new ArrayList<>();
+
+            int len = 1; // current run length
+            int runCount = 1; // total number of runs
             int n = s.length();
+
+            // Step 1: Build the run-length encoding of the string
             for (int i = 1; i < n; i++) {
                 if (s.charAt(i) == s.charAt(i - 1)) {
-                    len++;
+                    len++; // still in the same run
                 } else {
-                    v.add(len);
-                    len = 1;
-                    k++;
+                    runs.add(len); // save the finished run
+                    len = 1;       // reset for next run
+                    runCount++;
                 }
             }
-            v.add(len);
-            for (int i = 0; i < v.size(); i++) {
-                mul = (mul * v.get(i)) % MOD;
+            runs.add(len); // add the last run
+
+            // Step 2: Multiply choices for each run
+            for (int runLen : runs) {
+                ways = (ways * runLen) % MOD;
             }
-            for (int i = 1; i <= n - k; i++) {
-                mul = (mul * i) % MOD;
+
+            // Step 3: Multiply by factorial of deletions count
+            // deletions = n - runCount
+            for (int i = 1; i <= n - runCount; i++) {
+                ways = (ways * i) % MOD;
             }
-            System.out.println((n - k) + " " + mul);
+
+            // Step 4: Print results
+            // Minimum operations = n - runCount
+            System.out.println((n - runCount) + " " + ways);
         }
     }
 }
