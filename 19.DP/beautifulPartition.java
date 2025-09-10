@@ -4,7 +4,7 @@ We need to partition the sequence into exactly K non-empty contiguous subsequenc
 1. Each subsequence has strictly positive sum.  
 2. Every element belongs to exactly one subsequence.  
 
-We print "YES" and one valid partition if possible, else "NO".  
+We print "YES" and one valid partition if possible, else "NO".Also give length of each partition.  
 */
 
 import java.io.BufferedReader;

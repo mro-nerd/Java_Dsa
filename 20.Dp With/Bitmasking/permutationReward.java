@@ -6,7 +6,7 @@ Input: n=3
 
 Output: 17
 
-Explaination: if we amke our array like [1,2,0] then total reward will be rew[0][2]+rew[1][0]+rew[2][1]=3+6+8=17.
+Explaination: if we make our array like [1,2,0] then total reward will be rew[0][2]+rew[1][0]+rew[2][1]=3+6+8=17.
  */
 
 import java.util.*;
