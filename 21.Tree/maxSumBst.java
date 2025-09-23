@@ -10,7 +10,7 @@ Example 2:
 
 Input: root = [4,3,null,1,2]
 Output: 2
-Explanation: Maximum sum in a valid Binary search tree is obtained in a single root node with key equal to 2. */
+ */
 class TreeNode {
     int val;
     TreeNode left, right;
