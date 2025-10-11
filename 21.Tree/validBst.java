@@ -14,6 +14,7 @@ Example 2:
 
 Input: root = [5,1,4,null,null,3,6]
 Output: false 
+
 */
 class TreeNode {
     int val;
