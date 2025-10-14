@@ -1,5 +1,4 @@
 /*An Int array arr is given and window of k length is sliding over it from left to right. Return an array ans which stores max element from each array.
- * 
 Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
 Output: [3,3,5,5,6,7]
 Explanation: 
