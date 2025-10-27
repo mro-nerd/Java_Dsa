@@ -7,11 +7,13 @@ Activity C: Do homework at home — gives cᵢ happiness points on day i
 However, Taro cannot do the same activity on two consecutive days.Your task is to determine the maximum total happiness Taro can achieve over the N days, given the happiness points for each activity on each day.
 
 Ex:-
+
 Input:
 3
 10 40 70
 20 50 80
 30 60 90
+
 Output:
 210
 */
