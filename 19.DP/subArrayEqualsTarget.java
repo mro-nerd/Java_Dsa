@@ -5,8 +5,12 @@ Return the minimum sum of the lengths of the two required sub-arrays, or return 
 Example 1:
 
 Input: arr = [3,2,2,4,3], target = 3
+
 Output: 2
-Explanation: Only two sub-arrays have sum = 3 ([3] and [3]). The sum of their lengths is 2. */
+
+Explanation: Only two sub-arrays have sum = 3 ([3] and [3]). The sum of their lengths is 2. 
+
+*/
 
 import java.util.*;
 
