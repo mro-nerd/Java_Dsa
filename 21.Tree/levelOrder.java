@@ -1,4 +1,4 @@
-/*Level Order Traversal */
+/*Level Order Traversal of tree */
 
 import java.util.*;
 
