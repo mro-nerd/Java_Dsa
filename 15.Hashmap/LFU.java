@@ -42,7 +42,6 @@ lfu.get(3);      // return 3
                  // cache=[3,4], cnt(4)=1, cnt(3)=3
 lfu.get(4);      // return 4
                  // cache=[4,3], cnt(4)=2, cnt(3)=3
-
 */
 
 import java.util.*;
