@@ -18,14 +18,14 @@ Implement the StockPrice class:
  
 Example 1:
 
-Input
+Input:
 ["StockPrice", "update", "update", "current", "maximum", "update", "maximum", "update", "minimum"]
 [[], [1, 10], [2, 5], [], [], [1, 3], [], [4, 2], []]
 
-Output
+Output:
 [null, null, null, 5, 10, null, 5, null, 2]
 
-Explanation
+Explanation:
 StockPrice stockPrice = new StockPrice();
 stockPrice.update(1, 10); // Timestamps are [1] with corresponding prices [10].
 stockPrice.update(2, 5);  // Timestamps are [1,2] with corresponding prices [10,5].
