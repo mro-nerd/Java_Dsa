@@ -10,11 +10,11 @@ iii)Finds the maximum price the stock has been based on the current records.
 iv)Finds the minimum price the stock has been based on the current records.
 Implement the StockPrice class:
 
-*StockPrice() Initializes the object with no price records.
-*void update(int timestamp, int price) Updates the price of the stock at the given timestamp.
-*int current() Returns the latest price of the stock.
-*int maximum() Returns the maximum price of the stock.
-*int minimum() Returns the minimum price of the stock.
+StockPrice() Initializes the object with no price records.
+void update(int timestamp, int price) Updates the price of the stock at the given timestamp.
+int current() Returns the latest price of the stock.
+int maximum() Returns the maximum price of the stock.
+int minimum() Returns the minimum price of the stock.
  
 Example 1:
 
