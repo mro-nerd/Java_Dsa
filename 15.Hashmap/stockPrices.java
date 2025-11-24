@@ -4,11 +4,11 @@ Unfortunately due to the volatile nature of the stock market, the records do not
 
 Design an algorithm that:
 
-i)Updates the price of the stock at a particular timestamp, correcting the price from any previous records at the timestamp.
-ii)Finds the latest price of the stock based on the current records. The latest price is the price at the latest timestamp recorded.
-iii)Finds the maximum price the stock has been based on the current records.
-iv)Finds the minimum price the stock has been based on the current records.
-Implement the StockPrice class:
+(i)Updates the price of the stock at a particular timestamp, correcting the price from any previous records at the timestamp.
+(ii)Finds the latest price of the stock based on the current records. The latest price is the price at the latest timestamp recorded.
+(iii)Finds the maximum price the stock has been based on the current records.
+(iv)Finds the minimum price the stock has been based on the current records.
+    Implement the StockPrice class:
 
 i)StockPrice() Initializes the object with no price records.
 ii)void update(int timestamp, int price) Updates the price of the stock at the given timestamp.
