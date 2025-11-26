@@ -10,11 +10,11 @@ Design an algorithm that:
 (iv)Finds the minimum price the stock has been based on the current records.
     Implement the StockPrice class:
 
-i)StockPrice() Initializes the object with no price records.
-ii)void update(int timestamp, int price) Updates the price of the stock at the given timestamp.
-iii)int current() Returns the latest price of the stock.
-iv)int maximum() Returns the maximum price of the stock.
-v)int minimum() Returns the minimum price of the stock.
+(i)StockPrice() Initializes the object with no price records.
+(ii)void update(int timestamp, int price) Updates the price of the stock at the given timestamp.
+(iii)int current() Returns the latest price of the stock.
+(iv)int maximum() Returns the maximum price of the stock.
+(v)int minimum() Returns the minimum price of the stock.
  
 Example 1:
 
