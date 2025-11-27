@@ -8,7 +8,8 @@ Design an algorithm that:
 (ii)Finds the latest price of the stock based on the current records. The latest price is the price at the latest timestamp recorded.
 (iii)Finds the maximum price the stock has been based on the current records.
 (iv)Finds the minimum price the stock has been based on the current records.
-    Implement the StockPrice class:
+
+Implement the StockPrice class:
 
 (i)StockPrice() Initializes the object with no price records.
 (ii)void update(int timestamp, int price) Updates the price of the stock at the given timestamp.
