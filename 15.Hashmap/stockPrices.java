@@ -27,6 +27,7 @@ Output:
 [null, null, null, 5, 10, null, 5, null, 2]
 
 Explanation:
+
 StockPrice stockPrice = new StockPrice();
 stockPrice.update(1, 10); // Timestamps are [1] with corresponding prices [10].
 stockPrice.update(2, 5);  // Timestamps are [1,2] with corresponding prices [10,5].
