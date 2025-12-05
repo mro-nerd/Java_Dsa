@@ -38,6 +38,7 @@ stockPrice.update(1, 3);  // The previous timestamp 1 had the wrong price, so it
 stockPrice.maximum();     // return 5, the maximum price is 5 after the correction.
 stockPrice.update(4, 2);  // Timestamps are [1,2,4] with corresponding prices [3,5,2].
 stockPrice.minimum();     // return 2, the minimum price is 2 at timestamp 4. 
+
 */
 
 import java.util.*;
