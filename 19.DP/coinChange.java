@@ -6,7 +6,8 @@ Example 1:
 
 Input: 
 amount = 5, coins = [1,2,5]
-Output: 4
+Output: 
+4
 Explanation: there are four ways to make up the amount:
 5=5
 5=2+2+1
