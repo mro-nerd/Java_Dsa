@@ -8,7 +8,8 @@ Input:
 amount = 5, coins = [1,2,5]
 Output: 
 4
-Explanation: there are four ways to make up the amount:
+Explanation: 
+There are four ways to make up the amount:
 5=5
 5=2+2+1
 5=2+1+1+1
