@@ -24,7 +24,7 @@ public class reversedLinkedListII {
             ListNode joinFromLeft = null;
             ListNode joinToRight = null;
     
-            // Write logic in a single pass as per the follow-up question
+            
             while(curr != null && count <= right) {
                 next = curr.next;
                 if(count == left) {
