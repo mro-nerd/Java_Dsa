@@ -8,14 +8,14 @@ public class day1 {
         int countZero = 0;
 
         // Adjust the file path to your input file
-        try (BufferedReader br = new BufferedReader(new FileReader("in.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("input.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 char direction = line.charAt(0);
                 int steps = Integer.parseInt(line.substring(1));
 
                 if (direction == 'L') {
-                    position = (position - steps) % 100;
+                    position = (position - steps)%100;
                 } else if (direction == 'R') {
                     position = (position + steps) % 100;
                 }
