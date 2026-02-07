@@ -16,7 +16,7 @@ public class day1_part2 {
             char dir = line.charAt(0);
 
             for (int i = 0; i < rotateBy; i++) {
-                if (dir == 'L') {
+                if (dir == 'L') {	
                     dial -= 1;
                 } else {
                     dial += 1;
