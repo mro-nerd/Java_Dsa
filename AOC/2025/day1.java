@@ -8,7 +8,7 @@ public class day1 {
         int countZero = 0;
 
         // Adjust the file path to your input file
-        try (BufferedReader br = new BufferedReader(new FileReader("input.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("day1.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 char direction = line.charAt(0);
