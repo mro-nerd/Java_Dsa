@@ -21,9 +21,7 @@ public final class archer {
         int d = sc.nextInt();
         double Wa = a/(double)b, Wb = c/(double)d;
         double La = 1.0 - Wa, Lb = 1.0 - Wb;
-
         double ans = Wa/(1.0 - La*Lb);
-
         System.out.println(ans);
     }
 }
