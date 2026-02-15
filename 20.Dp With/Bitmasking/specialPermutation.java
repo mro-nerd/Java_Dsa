@@ -5,7 +5,7 @@ Return the total number of special permutations. As the answer could be large, r
 
  
 
-Example 1:
+Example:
 
 Input: nums = [2,3,6]
 Output: 2
