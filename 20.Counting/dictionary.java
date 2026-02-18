@@ -1,5 +1,4 @@
-/*
-Problem:
+/*Problem:
 ---------
 We define "Berland words":
 - Each word has exactly 2 lowercase letters.
