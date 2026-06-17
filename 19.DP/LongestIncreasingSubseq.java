@@ -48,6 +48,7 @@ class LongestIncreasingSubseq {
             } else {
                 // Binary search to find the first element >= nums[i]
                 int index = Collections.binarySearch(lis, nums[i]);
+                //System.out.println(index);
 
                 // If not found, binarySearch returns (-(insertion_point) - 1)
                 if (index < 0) {
@@ -64,7 +65,7 @@ class LongestIncreasingSubseq {
     }
 
     public static void main(String[] args) {
-        int nums[] = {3,10,2,1,20};
+        int nums[] = {10,9,2,5,3,7,101,18};
         int ans = lengthOfLIS(nums);
         System.out.println(ans);
     }
