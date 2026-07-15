@@ -5,12 +5,15 @@ Examples:
 Input: cost = [[0, 111], [112, 0]]
 Output: 223
 Explanation: We can visit 0->1->0 and cost = 111 + 112.
+
 Input: cost = [[0, 1000, 5000], [5000, 0, 1000], [1000, 5000, 0]]
 Output: 3000
 Explanation: We can visit 0->1->2->0 and cost = 1000+1000+1000 = 3000
+
 Constraints:
 1 <= cost.size() <= 20
-1 <= cost[i][j] <= 103 */
+1 <= cost[i][j] <= 103
+*/
 
 public class travellingSalesman {
     // This variable will store the bitmask when ALL cities have been visited.
