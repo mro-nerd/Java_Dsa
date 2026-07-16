@@ -13,7 +13,8 @@ Input:6 1
 Output:3.500000000000
 
 Input:6 3
-Output:4.958333333333*/
+Output:4.958333333333
+*/
 
 import java.util.Scanner;
 
