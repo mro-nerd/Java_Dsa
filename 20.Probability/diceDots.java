@@ -9,11 +9,13 @@ Output
 Output a single real number corresponding to the expected maximum. The answer will be considered correct if its relative or absolute error doesn't exceed 10  - 4.
 
 Example:-
+
 Input:6 1
 Output:3.500000000000
 
 Input:6 3
 Output:4.958333333333
+
 */
 
 import java.util.Scanner;
