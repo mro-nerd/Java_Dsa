@@ -8,7 +8,8 @@ A single line contains four integers 1<=a,b,c,d<=1000.
 Output
 Print a single real number, the probability that SmallR will win the match.
 
-The answer will be considered correct if the absolute or relative error doesn't exceed 10^-6. */
+The answer will be considered correct if the absolute or relative error doesn't exceed 10^-6.
+*/
 
 import java.util.*;
 
