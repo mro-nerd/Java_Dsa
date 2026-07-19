@@ -4,8 +4,12 @@ Notice that there may exist multiple valid ways for the insertion, as long as th
 
 Example 1:
 
-Input: root = [4,2,7,1,3], val = 5
-Output: [4,2,7,1,3,5] */
+Input: 
+root = [4,2,7,1,3], val = 5
+
+Output:
+[4,2,7,1,3,5]
+*/
 class TreeNode {
     int val;
     TreeNode left, right;
