@@ -6,8 +6,11 @@ Return the merged tree.
 
 Example 1:
 
-Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
-Output: [3,4,5,5,4,null,7] */
+Input:
+root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
+Output:
+[3,4,5,5,4,null,7]
+*/
 class TreeNode {
     int val;
     TreeNode left;
